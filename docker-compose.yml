@@ -5,4 +5,4 @@ services:
         container_name: mattgleich/pimoroni-christmas
         privileged: true
         image: "mattgleich/pimoroni-christmas"
-        restart: unless-stoped
+        restart: unless-stopped
