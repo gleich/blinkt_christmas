@@ -10,8 +10,8 @@ def main():
             blinkt.show()
             sleep(0.2)
         # Up Red
-        for i in range(7, 0, -1):
-            blinkt.set_pixel(i, 250, 0, 0, 0.1)
+        for i in range(8, 0, -1):
+            blinkt.set_pixel(i - 1, 250, 0, 0, 0.1)
             blinkt.show()
             sleep(0.2)
 
