@@ -14,3 +14,5 @@ def main():
             blinkt.set_pixel(i, 250, 0, 0)
             blinkt.show()
             sleep(0.2)
+
+main()
