@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
     pimoroni-christmas:
-        container_name: mattgleich/pimoroni-christmas
+        container_name: pimoroni-christmas
         privileged: true
         image: "mattgleich/pimoroni-christmas"
         restart: unless-stopped
