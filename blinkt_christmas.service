@@ -1,0 +1,16 @@
+[Unit]
+Description=Christmas lights on your Pimoroni Blinkt!
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/blinkt_christmas
+Restart=always
+RestartSec=5
+KillMode=process
+User=pi
+
+[Install]
+WantedBy=multi-user.target
