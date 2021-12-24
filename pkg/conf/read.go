@@ -33,10 +33,6 @@ func Read(log lumber.Logger) (Config, error) {
 	}
 
 	// Validate config
-	if data.Brightness == nil {
-		defaultBrightness := 0.1
-		data.Brightness = &defaultBrightness
-	}
 	if data.On == nil {
 		defaultOnStatus := true
 		data.On = &defaultOnStatus

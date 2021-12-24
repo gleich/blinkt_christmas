@@ -16,5 +16,4 @@ func main() {
 		log.Fatal(err, "Failed to load config file")
 	}
 	fmt.Println("on:", *config.On)
-	fmt.Println("brightness:", *config.Brightness)
 }
