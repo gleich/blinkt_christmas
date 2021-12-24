@@ -35,7 +35,7 @@ func main() {
 				}
 			}
 		}
-		log.Success("Updated Light")
+		log.Success("Updated lights")
 		time.Sleep(1 * time.Second)
 	}
 }
