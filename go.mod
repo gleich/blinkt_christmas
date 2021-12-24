@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/gleich/lumber/v2 v2.2.0
 	github.com/pelletier/go-toml/v2 v2.0.0-beta.4
+	github.com/alexellis/blinkt_go v0.0.0-20180120180744-cc0ca163e0bc
 )
 
 require (
