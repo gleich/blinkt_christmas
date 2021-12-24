@@ -1,7 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+
+	"github.com/gleich/blinkt_christmas/pkg/conf"
+	"github.com/gleich/lumber/v2"
+)
 
 func main() {
-	fmt.Println("foo bar")
+	log := lumber.NewCustomLogger()
+	log.Timezone = time.Local
+	config, err := conf.Read(log)
+	if err != nil {
+		log.Fatal(err, "Failed to load config file")
+	}
+	fmt.Println("on:", *config.On)
+	fmt.Println("brightness:", *config.Brightness)
 }
