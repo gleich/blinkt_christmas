@@ -38,5 +38,6 @@ func main() {
 		display.Show()
 		log.Success("Updated lights")
 		time.Sleep(1 * time.Second)
+		oddRed = !oddRed
 	}
 }
